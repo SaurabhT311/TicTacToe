@@ -5,7 +5,7 @@ class tictactoe
 	public static void uc2()
 	{
 		Scanner sc=new Scanner(System.in);
-		 System.out.println("Chhose between X and O: ");
+		 System.out.println("Choose between X and O: ");
 	        String input=sc.nextLine();
 		if(input.equals("X"))
 		{
