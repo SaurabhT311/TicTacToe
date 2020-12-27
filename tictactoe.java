@@ -25,7 +25,7 @@ public class tictactoe
 			case 2:
 	                    	if(input=='O')
 	                    	{
-	                    		System.out.println("Player chose X for the game");
+	                    		System.out.println("Player chose O for the game");
 	                    	}
 	                    	else{
 	                    		System.out.println("X has been chosen for computer");
