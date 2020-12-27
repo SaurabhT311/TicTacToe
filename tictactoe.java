@@ -1,20 +1,40 @@
+package Tic_Tac_Toe;
 import java.util.*;
-import java.util.Scanner;
-class tictactoe
+public class tictactoe 
 {
-	public static void uc2()
+	public void uc2()
 	{
-		Scanner sc=new Scanner(System.in);
-		 System.out.println("Choose between X and O: ");
-	        String input=sc.nextLine();
-		if(input.equals("X"))
+		int choice;
+	        char input;
+	        Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your choice: 1 for X and 2 for O :");
+	        choice=sc.nextInt();
+	        System.out.println("Chhose between X and O: ");
+              	input=sc.next().charAt(0);
+		switch(choice)
 		{
-			System.out.println("It is Player turn");
+			case 1:   
+				if(input=='X')
+				{
+					System.out.println("Player chose X for the game");
+	                        } 
+				else{
+					System.out.println("O has been chosen for computer"); 
+				}
+				break;
+			case 2:
+	                    	if(input=='O')
+	                    	{
+	                    		System.out.println("Player chose X for the game");
+	                    	}
+	                    	else{
+	                    		System.out.println("X has been chosen for computer");
+	                    		}
+	                    	break;
+			default:
+				System.out.println("Enter valid Choice");
+				break;
 		}
-		else {
-			System.out.println("O has been chosen for computer");
-		}
-
 	}
 	public static void uc1()
 	{
@@ -24,24 +44,18 @@ class tictactoe
 			System.out.println(board[i]+ " ");
 			board[i]='\0';
 		}
-	
 		System.out.println("|---|---|---|");
-		System.out.println("|---|---|---|");
-		System.out.println("|---|---|---|");
-		System.out.println("|---|---|---|");
-		System.out.println("|---|---|---|");
-		System.out.println();
+	        System.out.println("|---|---|---|");
+	    	System.out.println("|---|---|---|");
+	    	System.out.println("|---|---|---|");
+	    	System.out.println("|---|---|---|");
 	}
 
-
-public static void main(String[] args)
-{
-	tictactoe ob=new tictactoe();
-	//Scanner sc=new Scanner(System.in);
-	//String input=sc.nextLine();
-	ob.uc1();
-	ob.uc2();
-}
-}
-
+	public static void main(String[] args)
+	{
+		tictactoe t=new tictactoe();
+	        t.uc2();
+	        t.uc1();
+	        }
+	}
 
