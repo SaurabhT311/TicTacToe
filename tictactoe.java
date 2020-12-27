@@ -33,33 +33,6 @@ public class tictactoe
 	       		default:
 	                    	System.out.println("Enter valid Choice");
 	                    	break;
-		System.out.println("Enter your choice: 1 for X and 2 for O :");
-	        choice=sc.nextInt();
-	        System.out.println("Chhose between X and O: ");
-              	input=sc.next().charAt(0);
-		switch(choice)
-		{
-			case 1:   
-				if(input=='X')
-				{
-					System.out.println("Player chose X for the game");
-	                        } 
-				else{
-					System.out.println("O has been chosen for computer"); 
-				}
-				break;
-			case 2:
-	                    	if(input=='O')
-	                    	{
-	                    		System.out.println("Player chose O for the game");
-	                    	}
-	                    	else{
-	                    		System.out.println("X has been chosen for computer");
-	                    		}
-	                    	break;
-			default:
-				System.out.println("Enter valid Choice");
-				break;
 		}
 	}
 	public static void uc1()
